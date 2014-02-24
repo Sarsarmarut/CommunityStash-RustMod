@@ -2,10 +2,10 @@
 -- Mathew Heines --
 -- Developed in part for crimson-ops.com --
 
--- Define plugin variables 
+-- Define plugin variables
 PLUGIN.Title = "CommunityStash"
 PLUGIN.Description = "Social and Community mod"
-PLUGIN.Author = "Mathew Heines||Sarsarmarut & "
+PLUGIN.Author = "Mathew Heines||Sarsarmarut & Mujibur Khan"
 
 local CreateStashMessage = "You have created a Community Stash, others can join this stash with /stash join YOURNAME"
 local JoinStashMessage = "You have successfully joined a Community Stash"
@@ -23,25 +23,25 @@ function PLUGIN:Init()
 		self:DefaultConfig()
 		if (con) then config.Save("communitystash") end
 	end
-	
+
 	-- Database File Placeholder
 	-- WIP Set up challenge for Database file, return the amount of initalized Databases
 	local d, data = config.Read("communitystashdata")
 	self.Config = data or {}
-	if (not d) then 
+	if (not d) then
 		print("No working database was found, 0 Community Stash's initilaized")
 		if (data) then config.Save("communitystashdata") end
 	end
-   
+
    -- DEBUG Print to console --
 	-- WIP Set up Print to console listing all Stash's and all items in the stash along with members
 	-- of the stash and there current influence
 	local bug = self.Data.Bug
 	if (bug = 1)
-	
+
 	end
-		
-end		
+
+end
 -- Methods/Functions --
 
 -- >>>>>>>>>>>>>>>>>>>>>>>>
