@@ -53,18 +53,24 @@ end
 
 -- >>>>>>>>>>>>>>>>>>>>>>>>
 -- CreateStash(StashOwnerName)
+-- Create Stash with Creators name as the Owner and Stash Name
 -- >>>>>>>>>>>>>>>>>>>>>>>>
 function PLUGIN:CreateStash()
 end
 
 -- >>>>>>>>>>>>>>>>>>>>>>>>
--- JoinStas(StashOwnerName)
+-- JoinStash(StashOwnerName)
+-- Player is added to a stash with no influence
 -- >>>>>>>>>>>>>>>>>>>>>>>>
 function PLUGIN:JoinStash()
 end
 
 -- >>>>>>>>>>>>>>>>>>>>>>>>
--- Request(ItemName)
+-- Request(ItemName,ItemAmount)
+-- Player requests and item as either a positive (donation) or a negative (pull out) that value is then
+-- added to the players influence, a negative value would decrease influence on a pull out calls Influnece()
+-- Gives the player the items that they are pulling
+-- OR Removes the item from the players inventory on a donation
 -- >>>>>>>>>>>>>>>>>>>>>>>>
 function PLUGIN:Request()
 end
